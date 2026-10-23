@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPrev"
+                style="@style/HomeButton"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:contentDescription="Previous month"
+                android:padding="0dp"
+                android:text="‹"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tvMonth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/ink"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnNext"
+                style="@style/HomeButton"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:contentDescription="Next month"
+                android:padding="0dp"
+                android:text="›"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/StatCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView style="@style/SectionTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Month summary" />
+                <LinearLayout android:id="@+id/llSummary" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" />
+
+                <TextView style="@style/SectionTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Income by type" />
+                <LinearLayout android:id="@+id/llTypes" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" />
+
+                <TextView style="@style/SectionTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Income by payment mode" />
+                <LinearLayout android:id="@+id/llModes" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" />
+
+                <TextView style="@style/SectionTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Expenses by category" />
+                <LinearLayout android:id="@+id/llExpenseCats" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/StatCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView android:id="@+id/tvPendingTitle" style="@style/SectionTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <LinearLayout android:id="@+id/llPending" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" />
+
+                <TextView android:id="@+id/tvPendingYearlyTitle" style="@style/SectionTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" />
+                <LinearLayout android:id="@+id/llPendingYearly" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/StatCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView style="@style/SectionTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Today: cash vs UPI" />
+                <LinearLayout android:id="@+id/llToday" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/StatCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView style="@style/SectionTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Festival-wise collection and spending (all time)" />
+                <LinearLayout android:id="@+id/llFestivals" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnExport"
+            style="@style/HomeButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:text="Export all donations and expenses (Excel CSV)" />
+    </LinearLayout>
+</ScrollView>

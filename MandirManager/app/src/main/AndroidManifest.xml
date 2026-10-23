@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Mandir">
+
+        <activity
+            android:name=".ui.LoginActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.MainActivity" />
+        <activity android:name=".ui.AddDonationActivity" android:label="New donation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.DonationsActivity" android:label="Donations" />
+        <activity android:name=".ui.MembersActivity" android:label="Members" />
+        <activity android:name=".ui.AddMemberActivity" android:label="Add member" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.ExpensesActivity" android:label="Expenses" />
+        <activity android:name=".ui.AddExpenseActivity" android:label="Add expense" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.ReportsActivity" android:label="Reports" />
+        <activity android:name=".ui.SettingsActivity" android:label="Settings" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.UsersActivity" android:label="Users" />
+        <activity android:name=".ui.AddUserActivity" android:label="Add user" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.DeletionRequestsActivity" android:label="Delete requests" />
+        <activity android:name=".ui.DeletionLogActivity" android:label="Deletion history" />
+        <activity android:name=".ui.SyncActivity" android:label="Sync &amp; backup" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+</manifest>

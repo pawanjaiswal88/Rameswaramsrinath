@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Mandir" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/saffron</item>
+        <item name="colorPrimaryVariant">@color/saffron_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/marigold</item>
+        <item name="colorSecondaryVariant">@color/marigold_dark</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:statusBarColor">@color/saffron_dark</item>
+        <item name="android:windowBackground">@color/page</item>
+        <item name="textInputStyle">@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox</item>
+    </style>
+
+    <!-- Exposed dropdown (spinner replacement) -->
+    <style name="Dropdown" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu" />
+
+    <style name="StatCard" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">14dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="cardBackgroundColor">@color/surface</item>
+        <item name="strokeColor">@color/divider</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="contentPadding">16dp</item>
+    </style>
+
+    <style name="StatLabel">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/ink_muted</item>
+    </style>
+
+    <style name="StatValue">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:layout_marginTop">4dp</item>
+    </style>
+
+    <style name="SectionTitle">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/saffron_dark</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <style name="HomeButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/saffron_dark</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">15sp</item>
+        <item name="strokeColor">@color/saffron</item>
+        <item name="cornerRadius">14dp</item>
+        <item name="android:insetTop">4dp</item>
+        <item name="android:insetBottom">4dp</item>
+    </style>
+
+    <style name="PrimaryButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="cornerRadius">14dp</item>
+    </style>
+</resources>

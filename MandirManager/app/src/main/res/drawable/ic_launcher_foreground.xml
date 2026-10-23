@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- flag -->
+    <path android:fillColor="#FFFFFF" android:pathData="M53.5,24h1v12h-1z" />
+    <path android:fillColor="#FFD54F" android:pathData="M54.5,24L64,27L54.5,30Z" />
+    <!-- shikhara -->
+    <path android:fillColor="#FFFFFF" android:pathData="M54,35C48,43 44,53 42,62L66,62C64,53 60,43 54,35Z" />
+    <!-- ledge, hall, steps -->
+    <path android:fillColor="#FFFFFF" android:pathData="M36,62h36v4h-36z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M39,66h30v18h-30z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M34,84h40v3h-40z" />
+    <!-- door -->
+    <path android:fillColor="#E65100" android:pathData="M50,84L50,75A4,4 0,0 1,58 75L58,84Z" />
+</vector>

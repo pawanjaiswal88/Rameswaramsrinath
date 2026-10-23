@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="saffron">#E65100</color>
+    <color name="saffron_dark">#BF360C</color>
+    <color name="marigold">#FFB300</color>
+    <color name="marigold_dark">#FF8F00</color>
+    <color name="marigold_light">#FFE0B2</color>
+    <color name="page">#FFFAF4</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="divider">#F1E2D3</color>
+    <color name="ink">#2B1B0E</color>
+    <color name="ink_muted">#7A6656</color>
+    <color name="income">#2E7D32</color>
+    <color name="expense">#C62828</color>
+    <color name="whatsapp">#1FAF54</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>
