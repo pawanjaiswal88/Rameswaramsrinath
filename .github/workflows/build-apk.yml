@@ -21,6 +21,9 @@ jobs:
           java-version: '17'
           cache: 'gradle'
 
+      # SHA-1 key
+      - name: Generate Signing Report
+        run: ./gradlew signingReport
       # Navigates into MandirManager and grants permission
       - name: Grant Execute Permission for Gradlew
         run: |
