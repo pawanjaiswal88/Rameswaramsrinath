@@ -25,8 +25,23 @@ jobs:
       - name: Grant Execute Permission for Gradlew
         run: |
           cd MandirManager
-          chmod +x gradlew && ./gradlew signingReport
+          chmod +x gradlew
 
+      - name: Generate Both Signing Reports
+        env:
+          # Replace these right-side values with the exact names used in your release/build step
+          SIGNING_KEY_STORE_BASE64: ${{ secrets.SIGNING_KEY_STORE_BASE64 }}
+          SIGNING_KEY_PASSWORD: ${{ secrets.SIGNING_KEY_PASSWORD }}
+          SIGNING_ALIAS: ${{ secrets.SIGNING_ALIAS }}
+          SIGNING_STORE_PASSWORD: ${{ secrets.SIGNING_STORE_PASSWORD }}
+        run: |
+          cd MandirManager
+          ./gradlew assembleDebug
+          ./gradlew signingReport
+    # 1. Force the runner to generate the missing debug. keystore file
+       
+     # 2. Output the complete report containing both keys
+    
       # Navigates into MandirManager and compiles the APK
       - name: Compile and Build APK
         run: |
